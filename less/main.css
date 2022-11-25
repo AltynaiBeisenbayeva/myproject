@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Waverly CF';
+  src: local('Waverly CF Thin'), local('Waverly-CF-Thin'), url('../fonts/WaverlyCF-Thin.woff2') format('woff2'), url('../fonts/WaverlyCF-Thin.woff') format('woff'), url('../fonts/WaverlyCF-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+body {
+  font-family: 'Waverly CF';
+  box-sizing: border-box;
+}
+/* Шапка с навигацией */
+.header {
+  margin-bottom: 70px;
+  background-color: white;
+  border-bottom: 2px double black;
+}
+.header .nav {
+  display: block;
+  margin: 40px 0px;
+  list-style: none;
+}
+.header li {
+  display: inline-block;
+}
+.header a {
+  padding: 10px 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: olive;
+  font-weight: bold;
+}
+.header a:hover {
+  color: #666700;
+}
+.header a:active {
+  color: #999a00;
+}
+/* Обо мне*/
+.content {
+  margin-bottom: 100px;
+}
+.content-description {
+  display: block;
+  margin: auto;
+}
+.content-description h1 {
+  margin-bottom: 25px;
+  padding: 5px;
+  font-size: 55px;
+  font-weight: bold;
+  color: #4d4d00;
+}
+.content-description p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.content-description a {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid olive;
+  color: olive;
+  font-weight: bold;
+}
+.content-description a:hover {
+  color: #666700;
+}
+.content-description a:active {
+  color: #999a00;
+}
+.content-photo {
+  padding: 5px;
+}
+.content-photo img {
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+  filter: grayscale(1);
+}
+/* преимущества*/
+.feature-title {
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: olive;
+  font-weight: bold;
+  text-align: center;
+}
+.feature-item {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 350px;
+  height: 350px;
+  background-color: #333333;
+}
+.feature img {
+  background-size: contain;
+  filter: grayscale(1) brightness(20%);
+}
+.feature-content {
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.feature-content h4 {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+.feature-content p {
+  font-size: 20px;
+}
+.pricelist {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.pricelist-title {
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: olive;
+  font-weight: bold;
+  text-align: center;
+}
+.pricelist-item {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #4d4d00;
+}
+.pricelist h4 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: olive;
+  font-weight: bold;
+  text-align: center;
+}
+.pricelist .btn {
+  display: block;
+  margin: auto;
+  color: white;
+  border-color: olive;
+  background-color: #4d4d00;
+}
+.portfolio {
+  margin-bottom: 70px;
+}
+.portfolio-title {
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: olive;
+  font-weight: bold;
+  text-align: center;
+}
+.question {
+  margin-bottom: 70px;
+}
+.question-title {
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: olive;
+  font-weight: bold;
+  text-align: center;
+}
+.question .accordion-header {
+  --bs-accordion-active-color: #4d4d00;
+  --bs-accordion-active-bg: #FFF8DC;
+  --bs-accordion-btn-focus-border-color: olive;
+}
+.question .accordion-button {
+  font-size: 20px;
+  font-weight: bold;
+}

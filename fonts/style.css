@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Waverly CF';
+    src: local('Waverly CF Thin'), local('Waverly-CF-Thin'),
+        url('WaverlyCF-Thin.woff2') format('woff2'),
+        url('WaverlyCF-Thin.woff') format('woff'),
+        url('WaverlyCF-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
