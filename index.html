@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -14,15 +14,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <link rel="stylesheet" href="less/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 
-  <div class="container">
-    <div class="header">
-      <div class="row">
 
+  <div class="header">
+
+
+    <div class="container">
+      <div class="row">
         <div class="col-12">
           <ul class="nav">
             <li><a href="#aboutme" title="Обо мне">Обо мне</a></li>
@@ -35,8 +41,14 @@
         </div>
 
       </div>
+
     </div>
 
+
+
+
+  </div> <!-- закрывается шапка -->
+  <div class="container">
     <div id="aboutme" class="content">
       <div class="row">
         <div class="col-6">
@@ -50,7 +62,8 @@
               научилась создавать красивые фотографии и визуал для соцсетей сама, с помощью одного телефона! День за
               днём
               я создавала свой индивидуальный стиль работы, чтобы сделать свои снимки вдохновляющими и узнаваемыми…</p>
-            <a href="#">Подробнее</a>
+            <div class="button" type="button"><a href="#contentMore" onclick="diplay('#contentMore');">Подробнее</a>
+            </div>
           </div>
 
         </div>
@@ -59,6 +72,38 @@
             <img src="img/IMG_20200125_134705-min.jpg" alt="" width="400" height="500">
           </div>
         </div>
+      </div>
+    </div>
+
+
+    <div id="contentMore" class="content content-more">
+      <div class="row">
+        <div class="col-6">
+          <div class="content-description">
+            <h3>Обо мне</h3>
+            <p>Работаю контент-фотографом, развиваю свой личный бренд и хочу помогать другим превращать фотографию в
+              стиль
+              жизни и высокий доход. Я верю, что аутентичность и страсть в фотографии всегда востребованы. Ваши работы
+              будут говорить за вас и клиенты будут искать именно вас. </p>
+            <p>3 года назад я поверила в свой талант,
+              научилась создавать красивые фотографии и визуал для соцсетей сама, с помощью одного телефона! День за
+              днём
+              я создавала свой индивидуальный стиль работы, чтобы сделать свои снимки вдохновляющими и узнаваемыми…</p>
+          </div>
+
+        </div>
+        <div class="col-6">
+          <div class="content-photo">
+            <img src="img/IMG_20200125_134705-min.jpg" alt="" width="400" height="500">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="close-btn"><a href="#" onclick="hide('#contentMore');">Закрыть</a></div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -72,7 +117,7 @@
 
 
       <div class="row">
-        <div class="col 4">
+        <div class="col-4">
           <div class="feature-item">
             <img src="img/IMG_20200125_134705-min.jpg" width="350" height="350">
             <div class="feature-content">
@@ -82,7 +127,7 @@
             </div>
           </div>
         </div>
-        <div class="col 4">
+        <div class="col-4">
           <div class="feature-item">
             <img src="img/IMG_20200125_134705-min.jpg" width="350" height="350">
             <div class="feature-content">
@@ -92,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="col 4">
+        <div class="col-4">
           <div class="feature-item">
             <img src="img/IMG_20200125_134705-min.jpg" width="350" height="350">
             <div class="feature-content">
@@ -103,8 +148,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col 4 col-offset-2">
+      <div class="row justify-content-around">
+        <div class="col-4">
           <div class="feature-item">
             <img src="img/IMG_20200125_134705-min.jpg" width="350" height="350">
             <div class="feature-content">
@@ -114,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="col 4">
+        <div class="col-4">
           <div class="feature-item">
             <img src="img/IMG_20200125_134705-min.jpg" width="350" height="350">
             <div class="feature-content">
@@ -127,7 +172,7 @@
       </div>
     </div>
 
-    <div id="pricelist" class="pricelist">
+    <div id="service" class="pricelist">
       <div class="row">
         <div class="col-12">
           <h2 class="pricelist-title">Предоставляемые услуги</h2>
@@ -165,19 +210,40 @@
       </div>
     </div>
 
+
     <div id="portfolio" class="portfolio">
       <div class="row">
         <div class="col-12">
           <h2 class="portfolio-title">Портфолио</h2>
         </div>
       </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="portfolio-photo"></div>
+        </div>
+        <div class="col-4">
+          <div class="portfolio-photo"></div>
+        </div>
+        <div class="col-4">
+          <div class="portfolio-photo"></div>
+        </div>
+      </div>
 
-      <div class="fotorama" data-width="100%" data-height="500" data-allowfullscreen="native">
-        <img src="https://s.fotorama.io/1.jpg" data-full="1_full.jpg">
-        <img src="https://s.fotorama.io/2.jpg" data-full="2_full.jpg">
+      <div class="row">
+        <div class="col-4">
+          <div class="portfolio-photo"></div>
+        </div>
+        <div class="col-4">
+          <div class="portfolio-photo"></div>
+        </div>
+        <div class="col-4">
+          <div class="portfolio-photo"></div>
+        </div>
+
       </div>
 
     </div>
+
 
     <div id="qa" class="question">
       <div class="row">
@@ -272,29 +338,54 @@
 
 
     </div>
-
   </div>
   <!--закрывается контейнер-->
 
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="footer-content">
+            <p>Бейсенбаева Баян Бакеновна</p>
+            <p>ИНН 857945809049</p>
+            <p>Телефон <span>+7 (988) 030-25-25</span></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="footer-content">
+            <p>Все права защищены</p>
+            <p>2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 
 
 
+  <script type="text/javascript" src="js/jQuery.js"></script>
+  <script type="text/javascript">
+    function diplay(contentMore) {
+      if ($(contentMore).css('display') == 'none') {
+        $(contentMore).animate({ height: 'show' }, 500);
+      }
+    } 
+  </script>
 
-
-
-
-
-
-
-
-
-
+  <script type="text/javascript">
+    function hide(contentMore) {
+      if ($(contentMore).css('display') == 'block') {
+        $(contentMore).animate({ height: 'hide' }, 500);
+      }
+    } 
+  </script>
 
   <script src="js/bootstrap.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
+  <script src="js/index.js"></script>
 
 </body>
 

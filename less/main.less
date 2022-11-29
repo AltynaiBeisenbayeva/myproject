@@ -1,48 +1,39 @@
-@font-face {
-  font-family: 'Waverly CF';
-  src: local('Waverly CF Thin'), local('Waverly-CF-Thin'),
-    url('../fonts/WaverlyCF-Thin.woff2') format('woff2'),
-    url('../fonts/WaverlyCF-Thin.woff') format('woff'),
-    url('../fonts/WaverlyCF-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
 @bgcolor-dark: black;
 @bgcolor-light: white;
-@textcolor-light: olive;
+@textcolor-light: #9C6C44;
 
 .bold() {
   font-weight: bold;
 }
 
 .title () {
-  margin-bottom: 50px;
-  font-size: 40px;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
   color: @textcolor-light;
   .bold();
   text-align: center;
+  justify-content: center;
 }
 
 
 
 
 body {
-  font-family: 'Waverly CF';
+  font-family: 'Jost', serif;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 /* Шапка с навигацией */
 
 .header {
-  margin-bottom: 70px;
+  margin-bottom: 3rem;
   background-color: @bgcolor-light;
   border-bottom: 2px double @bgcolor-dark;
 
-
   .nav {
     display: block;
-    margin: 40px 0px;
+    margin: 1.5rem 0px;
     list-style: none;
   }
 
@@ -51,8 +42,9 @@ body {
   }
 
   a {
-    padding: 10px 10px;
-    font-size: 18px;
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
     text-decoration: none;
     color: @textcolor-light;
     .bold();
@@ -70,32 +62,35 @@ body {
 /* Обо мне*/
 
 .content {
-  margin-bottom: 100px;
+  margin-bottom: 4.3rem;
 
   &-description {
     display: block;
     margin: auto;
+    height: auto;
 
 
     h1 {
-      margin-bottom: 25px;
-      padding: 5px;
-      font-size: 55px;
+      margin-top: 0.6rem;
+      margin-bottom: 1.25rem;
+      padding: 0.3rem;
+      font-size: 2.8rem;
       .bold();
       color: darken(@textcolor-light, 10%);
     }
 
     p {
-      font-size: 20px;
-      margin-bottom: 40px;
+      font-size: 1.25rem;
+
     }
 
-    a {
-      padding: 10px;
+    .button {
+      display: inline-block;
+
+      margin-top: 1.5rem;
       text-decoration: none;
       border: 1px solid @textcolor-light;
-      color: @textcolor-light;
-      .bold();
+
 
       &:hover {
         color: darken(@textcolor-light, 5%);
@@ -104,24 +99,76 @@ body {
       &:active {
         color: lighten(@textcolor-light, 5%);
       }
+
+      a {
+        display: block;
+        padding: 0.6rem;
+        text-decoration: none;
+        color: @textcolor-light;
+        .bold();
+
+
+      }
+
     }
+
   }
 
   &-photo {
-    padding: 5px;
+    padding: 0.3rem;
 
     img {
       display: block;
       margin-left: auto;
-      border-radius: 5px;
+      border-radius: 0.6rem;
       filter: grayscale(1);
     }
   }
 }
 
+.content-more {
+  display: none;
+  position: relative;
+
+
+
+  h3 {
+    margin-top: 0.6rem;
+    margin-bottom: 1.25rem;
+    padding: 0.3rem;
+    font-size: 2.8rem;
+    .bold();
+    color: darken(@textcolor-light, 10%);
+  }
+
+  .close-btn {
+    display: block;
+    width: 7rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border: 1px solid @textcolor-light;
+    text-align: center;
+
+
+    a {
+      display: block;
+      padding: 0.6rem;
+      text-decoration: none;
+      color: @textcolor-light;
+      .bold();
+
+
+    }
+
+  }
+
+}
+
+
+
 /* преимущества*/
 .feature {
-
+  margin-bottom: 4.3rem;
 
   &-title {
     .title();
@@ -131,9 +178,9 @@ body {
     display: block;
     position: relative;
     margin: auto;
-    margin-bottom: 50px;
-    width: 350px;
-    height: 350px;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    height: 22rem;
     background-color: lighten(@bgcolor-dark, 20%);
   }
 
@@ -144,7 +191,7 @@ body {
   }
 
   &-content {
-    width: 250px;
+    width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -153,38 +200,38 @@ body {
 
     h4 {
       text-align: center;
-      margin-bottom: 15px;
-      padding: 5px;
+      margin-bottom: 1rem;
+      padding: 0.3rem;
       border-bottom: 1px solid @bgcolor-light;
       .bold()
     }
 
     p {
-      font-size: 20px;
+      font-size: 1.125rem;
     }
   }
 }
 
 .pricelist {
-  margin-top: 40px;
+
 
   &-title {
     .title();
   }
 
-  margin-bottom: 70px;
+  margin-bottom: 4.3rem;
 
   &-item {
     display: block;
     margin: auto;
-    padding: 20px;
+    padding: 1.25rem;
     border: 1px solid darken(@textcolor-light, 10%);
   }
 
 
   h4 {
-    margin-bottom: 30px;
-    font-size: 25px;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
     color: @textcolor-light;
     .bold();
     text-align: center;
@@ -200,15 +247,25 @@ body {
 }
 
 .portfolio {
-  margin-bottom: 70px;
+  margin-bottom: 4.3rem;
 
   &-title {
     .title();
+
+  }
+
+  &-photo {
+    display: block;
+    width: 100%;
+    height: 25rem;
+    margin: auto;
+    background-color: @bgcolor-dark;
+    margin-top: 1rem;
   }
 }
 
 .question {
-  margin-bottom: 70px;
+  margin-bottom: 4.3rem;
 
   &-title {
     .title();
@@ -223,8 +280,22 @@ body {
     }
 
     &-button {
-      font-size: 20px;
+      font-size: 1.25rem;
       .bold();
     }
   }
+}
+
+.footer {
+  background-color: @bgcolor-dark;
+  color: @bgcolor-light;
+  padding: 0.3rem;
+
+
+  &-content {
+    display: block;
+    height: auto;
+    padding: 0.6rem;
+  }
+
 }

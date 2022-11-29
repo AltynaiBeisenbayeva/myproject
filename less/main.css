@@ -1,96 +1,130 @@
-@font-face {
-  font-family: 'Waverly CF';
-  src: local('Waverly CF Thin'), local('Waverly-CF-Thin'), url('../fonts/WaverlyCF-Thin.woff2') format('woff2'), url('../fonts/WaverlyCF-Thin.woff') format('woff'), url('../fonts/WaverlyCF-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
 body {
-  font-family: 'Waverly CF';
+  font-family: 'Jost', serif;
   box-sizing: border-box;
+  cursor: pointer;
 }
 /* Шапка с навигацией */
 .header {
-  margin-bottom: 70px;
+  margin-bottom: 3rem;
   background-color: white;
   border-bottom: 2px double black;
 }
 .header .nav {
   display: block;
-  margin: 40px 0px;
+  margin: 1.5rem 0px;
   list-style: none;
 }
 .header li {
   display: inline-block;
 }
 .header a {
-  padding: 10px 10px;
-  font-size: 18px;
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.25rem;
   text-decoration: none;
-  color: olive;
+  color: #9C6C44;
   font-weight: bold;
 }
 .header a:hover {
-  color: #666700;
+  color: #8a603c;
 }
 .header a:active {
-  color: #999a00;
+  color: #ae784c;
 }
 /* Обо мне*/
 .content {
-  margin-bottom: 100px;
+  margin-bottom: 4.3rem;
 }
 .content-description {
   display: block;
   margin: auto;
+  height: auto;
 }
 .content-description h1 {
-  margin-bottom: 25px;
-  padding: 5px;
-  font-size: 55px;
+  margin-top: 0.6rem;
+  margin-bottom: 1.25rem;
+  padding: 0.3rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  color: #4d4d00;
+  color: #785335;
 }
 .content-description p {
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 1.25rem;
 }
-.content-description a {
-  padding: 10px;
+.content-description .button {
+  display: inline-block;
+  margin-top: 1.5rem;
   text-decoration: none;
-  border: 1px solid olive;
-  color: olive;
+  border: 1px solid #9C6C44;
+}
+.content-description .button:hover {
+  color: #8a603c;
+}
+.content-description .button:active {
+  color: #ae784c;
+}
+.content-description .button a {
+  display: block;
+  padding: 0.6rem;
+  text-decoration: none;
+  color: #9C6C44;
   font-weight: bold;
 }
-.content-description a:hover {
-  color: #666700;
-}
-.content-description a:active {
-  color: #999a00;
-}
 .content-photo {
-  padding: 5px;
+  padding: 0.3rem;
 }
 .content-photo img {
   display: block;
   margin-left: auto;
-  border-radius: 5px;
+  border-radius: 0.6rem;
   filter: grayscale(1);
 }
+.content-more {
+  display: none;
+  position: relative;
+}
+.content-more h3 {
+  margin-top: 0.6rem;
+  margin-bottom: 1.25rem;
+  padding: 0.3rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #785335;
+}
+.content-more .close-btn {
+  display: block;
+  width: 7rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border: 1px solid #9C6C44;
+  text-align: center;
+}
+.content-more .close-btn a {
+  display: block;
+  padding: 0.6rem;
+  text-decoration: none;
+  color: #9C6C44;
+  font-weight: bold;
+}
 /* преимущества*/
+.feature {
+  margin-bottom: 4.3rem;
+}
 .feature-title {
-  margin-bottom: 50px;
-  font-size: 40px;
-  color: olive;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #9C6C44;
   font-weight: bold;
   text-align: center;
+  justify-content: center;
 }
 .feature-item {
   display: block;
   position: relative;
   margin: auto;
-  margin-bottom: 50px;
-  width: 350px;
-  height: 350px;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  height: 22rem;
   background-color: #333333;
 }
 .feature img {
@@ -98,7 +132,7 @@ body {
   filter: grayscale(1) brightness(20%);
 }
 .feature-content {
-  width: 250px;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -107,35 +141,35 @@ body {
 }
 .feature-content h4 {
   text-align: center;
-  margin-bottom: 15px;
-  padding: 5px;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
   border-bottom: 1px solid white;
   font-weight: bold;
 }
 .feature-content p {
-  font-size: 20px;
+  font-size: 1.125rem;
 }
 .pricelist {
-  margin-top: 40px;
-  margin-bottom: 70px;
+  margin-bottom: 4.3rem;
 }
 .pricelist-title {
-  margin-bottom: 50px;
-  font-size: 40px;
-  color: olive;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #9C6C44;
   font-weight: bold;
   text-align: center;
+  justify-content: center;
 }
 .pricelist-item {
   display: block;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #4d4d00;
+  padding: 1.25rem;
+  border: 1px solid #785335;
 }
 .pricelist h4 {
-  margin-bottom: 30px;
-  font-size: 25px;
-  color: olive;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #9C6C44;
   font-weight: bold;
   text-align: center;
 }
@@ -143,35 +177,55 @@ body {
   display: block;
   margin: auto;
   color: white;
-  border-color: olive;
-  background-color: #4d4d00;
+  border-color: #9C6C44;
+  background-color: #785335;
 }
 .portfolio {
-  margin-bottom: 70px;
+  margin-bottom: 4.3rem;
 }
 .portfolio-title {
-  margin-bottom: 50px;
-  font-size: 40px;
-  color: olive;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #9C6C44;
   font-weight: bold;
   text-align: center;
+  justify-content: center;
+}
+.portfolio-photo {
+  display: block;
+  width: 100%;
+  height: 25rem;
+  margin: auto;
+  background-color: black;
+  margin-top: 1rem;
 }
 .question {
-  margin-bottom: 70px;
+  margin-bottom: 4.3rem;
 }
 .question-title {
-  margin-bottom: 50px;
-  font-size: 40px;
-  color: olive;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #9C6C44;
   font-weight: bold;
   text-align: center;
+  justify-content: center;
 }
 .question .accordion-header {
-  --bs-accordion-active-color: #4d4d00;
+  --bs-accordion-active-color: #785335;
   --bs-accordion-active-bg: #FFF8DC;
-  --bs-accordion-btn-focus-border-color: olive;
+  --bs-accordion-btn-focus-border-color: #9C6C44;
 }
 .question .accordion-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding: 0.3rem;
+}
+.footer-content {
+  display: block;
+  height: auto;
+  padding: 0.6rem;
 }
