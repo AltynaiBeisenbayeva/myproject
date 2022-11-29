@@ -22,14 +22,13 @@ body {
   margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
-  color: #9C6C44;
-  font-weight: bold;
+  color: #74Ab63;
 }
 .header a:hover {
-  color: #8a603c;
+  color: #679f56;
 }
 .header a:active {
-  color: #ae784c;
+  color: #83b474;
 }
 /* Обо мне*/
 .content {
@@ -46,7 +45,7 @@ body {
   padding: 0.3rem;
   font-size: 2.8rem;
   font-weight: bold;
-  color: #785335;
+  color: #5c8e4d;
 }
 .content-description p {
   font-size: 1.25rem;
@@ -55,19 +54,19 @@ body {
   display: inline-block;
   margin-top: 1.5rem;
   text-decoration: none;
-  border: 1px solid #9C6C44;
+  border: 1px solid #74Ab63;
 }
 .content-description .button:hover {
-  color: #8a603c;
+  color: #679f56;
 }
 .content-description .button:active {
-  color: #ae784c;
+  color: #83b474;
 }
 .content-description .button a {
   display: block;
   padding: 0.6rem;
   text-decoration: none;
-  color: #9C6C44;
+  color: #74Ab63;
   font-weight: bold;
 }
 .content-photo {
@@ -89,21 +88,21 @@ body {
   padding: 0.3rem;
   font-size: 2.8rem;
   font-weight: bold;
-  color: #785335;
+  color: #5c8e4d;
 }
 .content-more .close-btn {
   display: block;
   width: 7rem;
   margin-top: 1rem;
   text-decoration: none;
-  border: 1px solid #9C6C44;
+  border: 1px solid #74Ab63;
   text-align: center;
 }
 .content-more .close-btn a {
   display: block;
   padding: 0.6rem;
   text-decoration: none;
-  color: #9C6C44;
+  color: #74Ab63;
   font-weight: bold;
 }
 /* преимущества*/
@@ -113,7 +112,7 @@ body {
 .feature-title {
   margin-bottom: 3rem;
   font-size: 2.5rem;
-  color: #9C6C44;
+  color: #74Ab63;
   font-weight: bold;
   text-align: center;
   justify-content: center;
@@ -155,7 +154,7 @@ body {
 .pricelist-title {
   margin-bottom: 3rem;
   font-size: 2.5rem;
-  color: #9C6C44;
+  color: #74Ab63;
   font-weight: bold;
   text-align: center;
   justify-content: center;
@@ -164,12 +163,12 @@ body {
   display: block;
   margin: auto;
   padding: 1.25rem;
-  border: 1px solid #785335;
+  border: 1px solid #5c8e4d;
 }
 .pricelist h4 {
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  color: #9C6C44;
+  color: #74Ab63;
   font-weight: bold;
   text-align: center;
 }
@@ -177,8 +176,8 @@ body {
   display: block;
   margin: auto;
   color: white;
-  border-color: #9C6C44;
-  background-color: #785335;
+  border-color: #74Ab63;
+  background-color: #5c8e4d;
 }
 .portfolio {
   margin-bottom: 4.3rem;
@@ -186,7 +185,7 @@ body {
 .portfolio-title {
   margin-bottom: 3rem;
   font-size: 2.5rem;
-  color: #9C6C44;
+  color: #74Ab63;
   font-weight: bold;
   text-align: center;
   justify-content: center;
@@ -205,15 +204,15 @@ body {
 .question-title {
   margin-bottom: 3rem;
   font-size: 2.5rem;
-  color: #9C6C44;
+  color: #74Ab63;
   font-weight: bold;
   text-align: center;
   justify-content: center;
 }
 .question .accordion-header {
-  --bs-accordion-active-color: #785335;
+  --bs-accordion-active-color: #5c8e4d;
   --bs-accordion-active-bg: #FFF8DC;
-  --bs-accordion-btn-focus-border-color: #9C6C44;
+  --bs-accordion-btn-focus-border-color: #74Ab63;
 }
 .question .accordion-button {
   font-size: 1.25rem;
