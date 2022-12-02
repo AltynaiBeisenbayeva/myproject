@@ -9,26 +9,56 @@ body {
   background-color: white;
   border-bottom: 2px double black;
 }
-.header .nav {
+.header-nav {
+  padding: 0;
   display: block;
-  margin: 1.5rem 0px;
+  margin: 1.3rem 0px;
   list-style: none;
 }
 .header li {
   display: inline-block;
 }
 .header a {
-  display: inline-block;
+  display: block;
+  padding: 0.3rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
   color: #74Ab63;
 }
 .header a:hover {
-  color: #679f56;
+  color: #5c8e4d;
 }
 .header a:active {
-  color: #83b474;
+  color: #92bd84;
+}
+.header-share {
+  display: grid;
+  grid-template-columns: repeat(3, 35px);
+  width: 150px;
+  justify-content: space-between;
+  margin-left: auto;
+  transform: translateY(20px);
+}
+.header .socials {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  padding: 10px;
+  background: url(../img/icons/socials.png) no-repeat;
+}
+.header .socials-ig {
+  background-position: 101% -1%;
+  background-size: 725%;
+}
+.header .socials-vk {
+  background-position: 20% -1%;
+  background-size: 725%;
+}
+.header .socials-wa {
+  background-position: 20% 75%;
+  background-size: 725%;
 }
 /* Обо мне*/
 .content {
@@ -57,10 +87,10 @@ body {
   border: 1px solid #74Ab63;
 }
 .content-description .button:hover {
-  color: #679f56;
+  color: #5c8e4d;
 }
 .content-description .button:active {
-  color: #83b474;
+  color: #92bd84;
 }
 .content-description .button a {
   display: block;
@@ -69,11 +99,10 @@ body {
   color: #74Ab63;
   font-weight: bold;
 }
-.content-photo {
-  padding: 0.3rem;
-}
 .content-photo img {
   display: block;
+  width: auto;
+  height: 500px;
   margin-left: auto;
   border-radius: 0.6rem;
   filter: grayscale(1);
@@ -122,11 +151,12 @@ body {
   position: relative;
   margin: auto;
   margin-bottom: 2.5rem;
-  width: 100%;
   height: 22rem;
   background-color: #333333;
 }
 .feature img {
+  width: 100%;
+  height: 350px;
   background-size: contain;
   filter: grayscale(1) brightness(20%);
 }
@@ -146,7 +176,8 @@ body {
   font-weight: bold;
 }
 .feature-content p {
-  font-size: 1.125rem;
+  font-size: 1rem;
+  text-align: center;
 }
 .pricelist {
   margin-bottom: 4.3rem;
@@ -162,6 +193,7 @@ body {
 .pricelist-item {
   display: block;
   margin: auto;
+  margin-bottom: 1rem;
   padding: 1.25rem;
   border: 1px solid #5c8e4d;
 }
@@ -193,7 +225,7 @@ body {
 .portfolio-photo {
   display: block;
   width: 100%;
-  height: 25rem;
+  height: 23rem;
   margin: auto;
   background-color: black;
   margin-top: 1rem;
@@ -218,6 +250,17 @@ body {
   font-size: 1.25rem;
   font-weight: bold;
 }
+.cases {
+  margin-bottom: 4.3rem;
+}
+.cases-title {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #74Ab63;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
 .footer {
   background-color: black;
   color: white;
@@ -227,4 +270,81 @@ body {
   display: block;
   height: auto;
   padding: 0.6rem;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .content {
+    margin-bottom: 4rem;
+  }
+  .content h1 {
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    font-size: 2.5rem;
+  }
+  .content p {
+    font-size: 0.9rem;
+  }
+  .content-photo {
+    padding: 0.3rem;
+  }
+  .content-photo img {
+    height: 450px;
+  }
+  .content-more h3 {
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    font-size: 2.5rem;
+  }
+  .pricelist {
+    margin-bottom: 4rem;
+  }
+  .pricelist-item {
+    display: block;
+    margin: auto;
+    margin-bottom: 0.6rem;
+    padding: 1.25rem;
+    border: 1px solid #5c8e4d;
+  }
+  .pricelist h4 {
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+  }
+  .feature {
+    margin-bottom: 4rem;
+  }
+  .feature-item {
+    margin-bottom: 1rem;
+    height: 220px;
+  }
+  .feature img {
+    width: 105%;
+    height: 220px;
+  }
+  .feature-content {
+    width: 85%;
+  }
+  .feature-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+  }
+  .feature-content p {
+    font-size: 0.8rem;
+  }
+  .portfolio {
+    margin-bottom: 4rem;
+  }
+  .portfolio-photo {
+    width: 105%;
+    height: 17rem;
+    margin-top: 1rem;
+  }
+  .header a {
+    font-size: 1.1rem;
+  }
+  .header-share {
+    width: 130px;
+    transform: translateY(40px);
+  }
 }
