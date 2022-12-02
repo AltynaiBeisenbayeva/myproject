@@ -238,35 +238,61 @@ body {
   }
 }
 
-.pricelist {
+.pricelists {
   margin-bottom: 4.3rem;
 
   &-title {
     .title();
   }
 
-  &-item {
-    display: block;
-    margin: auto;
-    margin-bottom: 1rem;
-    padding: 1.25rem;
-    border: 1px solid darken(@textcolor-light, 10%);
-  }
+  &-wrapper {
+    display: flex;
+    align-items: center;
 
-  h4 {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    color: @textcolor-light;
-    .bold();
-    text-align: center;
-  }
+    .pricelist-item {
+      display: block;
+      min-height: 500px;
+      padding: 1.25rem;
+      border: 1px solid darken(@textcolor-light, 10%);
+      margin-right: 0.6rem;
 
-  .btn {
-    display: block;
-    margin: auto;
-    color: @bgcolor-light;
-    border-color: @textcolor-light;
-    background-color: darken(@textcolor-light, 10%);
+      ul {
+        margin: 0;
+        margin-bottom: 25px;
+
+
+
+        li {
+          font-size: 1rem;
+        }
+      }
+
+      &-allinc {
+        background-color: lighten(@textcolor-light, 40%);
+        border: 2px solid darken(@textcolor-light, 10%);
+
+
+        h4 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    h4 {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      color: @textcolor-light;
+      .bold();
+      text-align: center;
+    }
+
+    .btn {
+      display: block;
+      margin: auto;
+      color: @bgcolor-light;
+      border-color: @textcolor-light;
+      background-color: darken(@textcolor-light, 10%);
+    }
   }
 }
 

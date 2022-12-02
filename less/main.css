@@ -179,10 +179,10 @@ body {
   font-size: 1rem;
   text-align: center;
 }
-.pricelist {
+.pricelists {
   margin-bottom: 4.3rem;
 }
-.pricelist-title {
+.pricelists-title {
   margin-bottom: 3rem;
   font-size: 2.5rem;
   color: #74Ab63;
@@ -190,21 +190,39 @@ body {
   text-align: center;
   justify-content: center;
 }
-.pricelist-item {
+.pricelists-wrapper {
+  display: flex;
+  align-items: center;
+}
+.pricelists-wrapper .pricelist-item {
   display: block;
-  margin: auto;
-  margin-bottom: 1rem;
+  min-height: 500px;
   padding: 1.25rem;
   border: 1px solid #5c8e4d;
+  margin-right: 0.6rem;
 }
-.pricelist h4 {
+.pricelists-wrapper .pricelist-item ul {
+  margin: 0;
+  margin-bottom: 25px;
+}
+.pricelists-wrapper .pricelist-item ul li {
+  font-size: 1rem;
+}
+.pricelists-wrapper .pricelist-item-allinc {
+  background-color: #eaf2e8;
+  border: 2px solid #5c8e4d;
+}
+.pricelists-wrapper .pricelist-item-allinc h4 {
+  font-size: 1.7rem;
+}
+.pricelists-wrapper h4 {
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #74Ab63;
   font-weight: bold;
   text-align: center;
 }
-.pricelist .btn {
+.pricelists-wrapper .btn {
   display: block;
   margin: auto;
   color: white;
