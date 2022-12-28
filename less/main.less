@@ -171,10 +171,19 @@ body {
     color: darken(@textcolor-light, 10%);
   }
 
+  .content {
+    &-photo {
+      img {
+        margin: 0;
+        margin-right: auto;
+      }
+    }
+  }
+
   .close-btn {
     display: block;
     width: 7rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     text-decoration: none;
     border: 1px solid @textcolor-light;
     text-align: center;
@@ -182,9 +191,6 @@ body {
     a {
       display: block;
       padding: 0.6rem;
-      text-decoration: none;
-      color: @textcolor-light;
-      .bold();
     }
   }
 }
@@ -259,8 +265,6 @@ body {
       ul {
         margin: 0;
         margin-bottom: 25px;
-
-
 
         li {
           font-size: 1rem;
@@ -456,4 +460,198 @@ body {
       transform: translateY(40px);
     }
   }
+
+  .pricelists {
+    margin-bottom: 4rem;
+
+
+    &-wrapper {
+      display: block;
+
+      .pricelist-item {
+        min-height: 500px;
+        padding: 1rem;
+        margin-right: 0.6rem;
+
+        ul {
+
+          li {
+            font-size: 1rem;
+          }
+        }
+
+        h4 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    h4 {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+
+  }
+
+  .header {
+    .socials {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      padding: 10px;
+      background: url(../img/icons/socials.png) no-repeat;
+
+      &-ig {
+        background-position: 101% -1%;
+        background-size: 725%;
+      }
+
+      &-vk {
+        background-position: 20% -1%;
+        background-size: 725%;
+      }
+
+      &-wa {
+        background-position: 20% 75%;
+        background-size: 725%;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header {
+    margin-bottom: 3rem;
+
+    &-nav {
+      padding: 0;
+      margin: 1.3rem 0px;
+    }
+
+    a {
+      padding: 0.3rem;
+      margin-right: 1.15rem;
+      font-size: 1.1rem;
+    }
+
+    &-share {
+      width: 170px;
+      justify-content: space-around;
+      margin: 0;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
+    .socials {
+      transform: translateY(-15px);
+    }
+
+  }
+
+  .pricelists {
+    margin-bottom: 4rem;
+
+
+    &-wrapper {
+      display: block;
+
+      .pricelist-item {
+        min-height: 500px;
+        padding: 1rem;
+        margin-right: 0.6rem;
+
+        ul {
+
+          li {
+            font-size: 1rem;
+          }
+        }
+
+        h4 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    h4 {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .feature {
+    margin-bottom: 4rem;
+
+    &-item {
+      margin-bottom: 1rem;
+      height: 180px;
+    }
+
+    img {
+      width: 105%;
+      height: 180px;
+    }
+
+    &-content {
+      width: 85%;
+
+      h4 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+        padding: 0.2rem;
+      }
+
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .portfolio {
+    margin-bottom: 4rem;
+
+    &-photo {
+      width: 105%;
+      height: 14rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .content {
+    margin-bottom: 4rem;
+
+
+    h1 {
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
+      padding: 0.3rem;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+
+    &-photo {
+      padding: 0.3rem;
+
+      img {
+        height: 400px;
+      }
+    }
+  }
+
+  .content-more {
+    h3 {
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
+      padding: 0.3rem;
+      font-size: 1.8rem;
+    }
+
+    &-photo {
+      padding: 0.3rem;
+    }
+  }
+
 }
