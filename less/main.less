@@ -188,13 +188,13 @@ body {
   .close-btn {
     display: block;
     width: 7rem;
-    margin-top: 1.5rem;
-    text-decoration: none;
+    margin-top: 2rem;
     border: 1px solid @textcolor-light;
     text-align: center;
 
     a {
       display: block;
+      text-decoration: none;
       padding: 0.6rem;
     }
   }
@@ -285,6 +285,8 @@ body {
           font-size: 1.7rem;
         }
       }
+
+
     }
 
     h4 {
@@ -294,6 +296,38 @@ body {
       .bold();
       text-align: center;
     }
+
+    .btn {
+      height: 2.5rem;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      color: @bgcolor-light;
+      border-color: @textcolor-light;
+      background-color: darken(@textcolor-light, 10%);
+    }
+
+    a {
+      text-decoration: none;
+      color: @bgcolor-light;
+    }
+  }
+
+  .pricelist-item-short {
+    h4 {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      color: @textcolor-light;
+      .bold();
+      text-align: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    padding: 1.25rem;
+    border: 1px solid darken(@textcolor-light, 10%);
+    margin-top: 1.5rem;
 
     .btn {
       height: 2.5rem;

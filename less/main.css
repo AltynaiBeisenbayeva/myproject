@@ -133,13 +133,13 @@ body {
 .content-more .close-btn {
   display: block;
   width: 7rem;
-  margin-top: 1.5rem;
-  text-decoration: none;
+  margin-top: 2rem;
   border: 1px solid #74Ab63;
   text-align: center;
 }
 .content-more .close-btn a {
   display: block;
+  text-decoration: none;
   padding: 0.6rem;
 }
 /* преимущества*/
@@ -241,6 +241,34 @@ body {
   background-color: #5c8e4d;
 }
 .pricelists-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+.pricelists .pricelist-item-short {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  padding: 1.25rem;
+  border: 1px solid #5c8e4d;
+  margin-top: 1.5rem;
+}
+.pricelists .pricelist-item-short h4 {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #74Ab63;
+  font-weight: bold;
+  text-align: center;
+}
+.pricelists .pricelist-item-short .btn {
+  height: 2.5rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-color: #74Ab63;
+  background-color: #5c8e4d;
+}
+.pricelists .pricelist-item-short a {
   text-decoration: none;
   color: white;
 }
