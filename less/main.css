@@ -359,7 +359,7 @@ body {
     padding: 0.3rem;
   }
   .content-photo img {
-    height: 450px;
+    width: 350px;
   }
   .content-more h3 {
     margin-top: 0.3rem;
@@ -407,9 +407,13 @@ body {
     margin-bottom: 4rem;
   }
   .portfolio-photo {
-    width: 105%;
-    height: 17rem;
+    width: 14rem;
+    height: 18rem;
     margin-top: 1rem;
+  }
+  .portfolio-photo img {
+    width: 14rem;
+    height: 18rem;
   }
   .header a {
     font-size: 1.1rem;
