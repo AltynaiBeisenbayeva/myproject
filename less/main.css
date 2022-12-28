@@ -101,10 +101,12 @@ body {
 }
 .content-photo img {
   display: block;
-  width: auto;
+  margin-top: 0.6rem;
+  padding: 0.4rem;
+  width: 350px;
   height: 500px;
   margin-left: auto;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   filter: grayscale(1);
 }
 .content-more {
@@ -196,7 +198,8 @@ body {
   align-items: center;
 }
 .pricelists-wrapper .pricelist-item {
-  display: block;
+  display: flex;
+  flex-direction: column;
   min-height: 500px;
   padding: 1.25rem;
   border: 1px solid #5c8e4d;
@@ -224,11 +227,17 @@ body {
   text-align: center;
 }
 .pricelists-wrapper .btn {
-  display: block;
-  margin: auto;
+  height: 2.5rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   border-color: #74Ab63;
   background-color: #5c8e4d;
+}
+.pricelists-wrapper a {
+  text-decoration: none;
+  color: white;
 }
 .portfolio {
   margin-bottom: 4.3rem;
